@@ -58,7 +58,7 @@ nav ul li a:hover {
 section {
     width: auto;
     height: 100vh;
-    background: url(../images/contact.svg);
+    background: url(../images/bg.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
