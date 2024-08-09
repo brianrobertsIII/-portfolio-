@@ -103,3 +103,21 @@ p {
     padding-right: 25%;
     color: #fff;
 }
+
+.scroll-watcher {
+    height: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: lime;
+    width: 100%;
+    scale: 0 1;
+    transform-origin: left;
+    
+    animation: scroll-watcher linear;
+    animation-timeline: scroll(y);
+}
+
+@keyframes scroll-watcher {
+    to {scale: 1 1;}
+}

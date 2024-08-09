@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -11,16 +12,52 @@
         <nav>
             <div class="logo">Home</div>
               <ul>
-                  <li><a href="./pages/about.html">About</a></li>
-                  <li><a href="./pages/portfolio.html">Portfolio</a></li>
-                  <li><a href="./pages/contact.html">Contact</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>
               </ul>
         </nav>
 
-        <section></section>
+        <div id="welcome" class="mid"> 
+           
+        </div>
 
-        <footer class="footer">
-            <p>Copyright &copy;2024</p>
-        </footer>
+        <div id="about" class="introduction">
+            <h4>Hello! </h4>
+            <p>I am Brian L. Roberts III and I am a web developer based out of Chicago, IL, USA.</p>
+            <p>In my portfolio, you will find variuos coding projects through The Odin Project as well as projects that I have personally worked on to hone and improve my skills in the HTML, CSS and JavaScript languages. You will also find some of my Graphic Design projects that I have worked on using Adobe Illustrator, Photoshop and Canva.</p>
+            <p>I am constantly updating my portfolio with new projects, as well as improving on the current ones. Therefore, opinions are very important. Please feel free to reach out and leave comments, concerning, opinions, general questions and business inquiries.</p>
+        </div>
+
+        <div id="portfolio" class="portfolio">
+
+        </div>
+
+        <div id="contact" class="contact">
+            <div class="container">
+                <h3>Cantact Me</h3>
+                <div class="contact-wrap">
+                    <div class="contact-form">
+                        <h3>Send me a message</h3>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Your Message"></textarea>
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p><i class="fas fa-phone"></i> 708 929 2895</p>
+                        <p><i class="fas fa-envelope"></i> brianrobertsiiicoding@gmail.com</p>
+                        <p><i class="fas fa-map-marker"></i> Chicago, IL, USA</p>
+                    </div>
+                </div>
     </body>
 </html>
