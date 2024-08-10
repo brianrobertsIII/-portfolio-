@@ -9,14 +9,15 @@
     </head>
 
     <body>
-        <nav>
-            <div class="logo">Home</div>
-              <ul>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#contact">Contact</a></li>
-              </ul>
-        </nav>
+        <header>
+            <a href="#" class="logo">Home</a>
+
+            <nav>
+                <a href="#about" class="active">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
 
         <div id="welcome" class="mid"> 
            <!--Welcome Photo-->
@@ -54,10 +55,35 @@
                     </div>
                     <div class="contact-info">
                         <h3>Contact Information</h3>
-                        <p><i class="fas fa-phone"></i> 708 929 2895</p>
+                        <p><i class="fas fa-phone"></i> 708-929-2895</p>
                         <p><i class="fas fa-envelope"></i> brianrobertsiiicoding@gmail.com</p>
                         <p><i class="fas fa-map-marker"></i> Chicago, IL, USA</p>
                     </div>
                 </div>
     </body>
+
+    <script>
+        const body = document.body;
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset
+
+            if (currentScroll <= 0) {
+                body.classList.remove('scroll-up')
+            }
+
+            if (currentScroll > lastScroll && !body.classList.contains('scroll-down')) {
+                body.classList.remove('scroll-up')
+                body.classList.add('scroll-down')
+            }
+
+            if (currentScroll < lastScroll && body.classList.contains('scroll-down')) {
+                body.classList.remove('scroll-down')
+                body.classList.add('scroll-up')
+            }
+
+            lastScroll = currentScroll;
+        })
+    </script>
 </html>
